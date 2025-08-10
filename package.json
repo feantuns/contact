@@ -1,0 +1,9 @@
+{
+  "name": "contact",
+  "version": "1.0.0",
+  "description": "Contact Page",
+  "homepage": "https://feantuns.github.io/contact/",
+  "main": "index.html",
+  "author": "Felipe Antunes",
+  "license": "ISC"
+}
