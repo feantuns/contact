@@ -6,84 +6,97 @@
     <link rel="icon" type="image/svg+xml" href="/contact/favicon.svg" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Contact • Felipe Antunes</title>
-    <link rel="stylesheet" href="./index.css" />
-    <style>
-      /* Gradient animation */
-      @keyframes gradientMove {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      .animated-gradient {
-        background: linear-gradient(-45deg, #1e293b, #0f172a, #1e3a8a, #312e81);
-        background-size: 400% 400%;
-        animation: gradientMove 15s ease infinite;
-      }
-    </style>
   </head>
-  <body class="animated-gradient h-full flex items-center justify-center p-4">
-    <main
-      class="w-full max-w-md text-center text-white backdrop-blur-lg bg-white/10 rounded-2xl shadow-2xl p-6 opacity-0 translate-y-4 transition duration-700 ease-out"
-      id="card"
-    >
-      <!-- Profile -->
-      <img
-        src="./avatar.jpg"
-        alt="Felipe Antunes"
-        class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4 border-4 border-white/50"
-      />
-      <h1 class="text-3xl font-bold mb-1">Felipe Antunes</h1>
-      <p class="text-gray-200 mb-6">Front-End Developer • React & Tailwind</p>
+  <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
 
-      <!-- Links -->
-      <div class="space-y-3">
+    <!-- Header -->
+    <header class="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+        <span class="text-sm font-semibold tracking-tight text-gray-900">Felipe Antunes</span>
         <a
-          href="https://www.linkedin.com/in/feantuns/"
-          target="_blank"
-          class="block backdrop-blur-sm bg-white/20 hover:bg-white/30 transition rounded-xl px-6 py-3 font-medium shadow-md"
+          href="https://feantuns.github.io/home/"
+          class="text-xs font-medium text-indigo-600 hover:text-indigo-700 transition-colors"
         >
-          💼 LinkedIn
-        </a>
-        <a
-          href="https://www.instagram.com/fe.antune5/"
-          target="_blank"
-          class="block backdrop-blur-sm bg-white/20 hover:bg-white/30 transition rounded-xl px-6 py-3 font-medium shadow-md"
-        >
-          📸 Instagram
-        </a>
-        <a
-          href="mailto:sermoes-vimes91@icloud.com"
-          class="block backdrop-blur-sm bg-white/20 hover:bg-white/30 transition rounded-xl px-6 py-3 font-medium shadow-md"
-        >
-          ✉️ Email
-        </a>
-        <a
-          href="https://github.com/feantuns"
-          target="_blank"
-          class="block backdrop-blur-sm bg-white/20 hover:bg-white/30 transition rounded-xl px-6 py-3 font-medium shadow-md"
-        >
-          💻 GitHub
+          ← Portfolio
         </a>
       </div>
+    </header>
 
-      <!-- Footer -->
-      <p class="text-xs text-gray-300 mt-8">
-        © <span id="year"></span> Felipe Antunes. All rights reserved.
-      </p>
+    <!-- Main -->
+    <main class="py-16">
+      <div class="max-w-4xl mx-auto px-6">
+        <section class="space-y-8">
+
+          <!-- Hero -->
+          <div class="flex items-center gap-5">
+            <div class="relative flex-shrink-0">
+              <div class="absolute inset-0 rounded-full bg-indigo-100 scale-110"></div>
+              <img
+                src="./avatar.jpg"
+                alt="Felipe Antunes"
+                class="relative w-20 h-20 rounded-full object-cover shadow-md ring-4 ring-white"
+                loading="eager"
+              />
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900">Felipe Antunes</h1>
+              <p class="mt-1 text-lg text-indigo-600 font-medium">Front-End Developer • React &amp; Tailwind</p>
+            </div>
+          </div>
+
+          <!-- Contact links -->
+          <div class="space-y-3 pt-2">
+            <a
+              href="https://www.linkedin.com/in/feantuns/"
+              target="_blank"
+              rel="noreferrer"
+              class="flex items-center gap-3 w-full px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 transition-colors shadow-sm"
+            >
+              <span class="text-lg" aria-hidden="true">💼</span> LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/fe.antune5/"
+              target="_blank"
+              rel="noreferrer"
+              class="flex items-center gap-3 w-full px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 transition-colors shadow-sm"
+            >
+              <span class="text-lg" aria-hidden="true">📸</span> Instagram
+            </a>
+            <a
+              href="mailto:sermoes-vimes91@icloud.com"
+              class="flex items-center gap-3 w-full px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 transition-colors shadow-sm"
+            >
+              <span class="text-lg" aria-hidden="true">✉️</span> Email
+            </a>
+            <a
+              href="https://github.com/feantuns"
+              target="_blank"
+              rel="noreferrer"
+              class="flex items-center gap-3 w-full px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 transition-colors shadow-sm"
+            >
+              <span class="text-lg" aria-hidden="true">💻</span> GitHub
+            </a>
+          </div>
+
+        </section>
+      </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 bg-white">
+      <div class="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-gray-400">
+        <span>© <span id="year"></span> Felipe Antunes</span>
+        <a
+          href="https://feantuns.github.io/home/"
+          class="hover:text-gray-600 transition-colors underline underline-offset-2"
+        >
+          Portfolio
+        </a>
+      </div>
+    </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      window.addEventListener("load", () => {
-        const card = document.getElementById("card");
-        card.classList.remove("opacity-0", "translate-y-4");
-      });
     </script>
   </body>
 </html>
